@@ -56,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="images/Main.png" alt="Logo" width="80" height="80">
+<img src="Images/Main.png" alt="main" width="80" height="80">
 
 This project is intended to be able to maintain a list of all parts availible in inventory for a automotive parts store. This project was an initial version to show competency in creating a system that is easy to use. Future versions would include moving from a XML file for storing data to a database as well as add features based on what is needed for the software to increase usability.
 
@@ -77,9 +77,9 @@ The project was originally written in Visual Studio 2013. All subsequent version
 
 Items can be added to the program using the new itme tab on the far left. Items can also be searched for using the search tab. Modifying an item can be done by clicking on the row in the software. The item will highlight and then can now be edited using the edit or delete buttons at the bottom.
 
-<img src="images/Main.png" alt="Logo" width="80" height="80">
-<img src="images/Search.png" alt="Logo" width="80" height="80">
-<img src="images/ItemDetails.png" alt="Logo" width="80" height="80">
+<img src="Images/Main.png" alt="Main">
+<img src="Images/Search.png" alt="Search">
+<img src="Images/ItemDetails.png" alt="Item details">
 
 
 <!-- LICENSE -->
