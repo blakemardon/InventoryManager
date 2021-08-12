@@ -20,7 +20,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/blakemardon/InventoryManager">
-    <img src="Images/Logo.jpg" alt="Logo" width="80" height="80">
+    <img src="Images/Logo.jpg" alt="Logo" height="80">
   </a>
 
   <h3 align="center">Inventory Manager</h3>
