@@ -20,7 +20,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/blakemardon/InventoryManager">
-    <img src="Images/Logo.png" alt="Logo" width="80" height="80">
+    <img src="Images/Logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Inventory Manager</h3>
@@ -55,8 +55,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-<img src="Images/Main.png" alt="main">
 
 This project is intended to be able to maintain a list of all parts availible in inventory for a automotive parts store. This project was an initial version to show competency in creating a system that is easy to use. Future versions would include moving from a XML file for storing data to a database as well as add features based on what is needed for the software to increase usability.
 
