@@ -1,0 +1,118 @@
+﻿<UserControl x:Class="InventoryManager2.ItemEditControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" BorderThickness="0,0,0,1" BorderBrush="Black">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="170" />
+                </Grid.ColumnDefinitions>
+                <Label>
+                    Name:
+                </Label>
+                <TextBox Grid.Column="1" Name="NameTxtbx" VerticalAlignment="Center" Margin="0,5,0,5" />
+            </Grid>
+        </Border>
+        <Border Grid.Row="1" BorderThickness="0,0,0,1" BorderBrush="Black">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="170" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="1">
+                    Make:
+                </Label>
+                <TextBox Grid.Column="1" Name="MakeTxtbx" Margin="0,5,0,5" />
+            </Grid>
+        </Border>
+        <Border Grid.Row="2" BorderThickness="0,0,0,1" BorderBrush="Black">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="170" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="2">
+                    Model:
+                </Label>
+                <TextBox Grid.Column="1" Name="ModelTxtbx" Margin="0,5,0,5"/>
+            </Grid>
+        </Border>
+        <Border Grid.Row="3" BorderThickness="0,0,0,1" BorderBrush="Black">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="170" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="3">
+                    Year Range:
+                </Label>
+                <ComboBox Grid.Column="1" Width="75" HorizontalAlignment="Left" VerticalAlignment="Center" Name="YearStartCb" Initialized="YearStartCb_Initialized" />
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    -
+                </TextBlock>
+                <ComboBox Grid.Column="1" Width="75" HorizontalAlignment="Right" VerticalAlignment="Center" Name="YearEndCb" Initialized="YearEndCb_Initialized" />
+            </Grid>
+        </Border>
+        <Border Grid.Row="4" BorderThickness="0,0,0,1" BorderBrush="Black">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="170" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="4">
+                    Stock:
+                </Label>
+                <ComboBox Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Name="StockCb" Width="75" Initialized="StockCb_Initialized" />
+            </Grid>
+        </Border>
+        <Border Grid.Row="5" BorderThickness="0,0,0,1" BorderBrush="Black">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="170" />
+                </Grid.ColumnDefinitions>
+                <Label VerticalAlignment="Center">
+                    Bin Number:
+                </Label>
+                <TextBox Grid.Column="1" Name="BinNumberTxtbx" Margin="0,5,0,5" />
+            </Grid>
+        </Border>
+        <Border Grid.Row="6" >
+            <Grid>
+                <Label>
+                    Description:
+                </Label>
+            </Grid>
+        </Border>
+        <Border Grid.Row="7" BorderThickness="0,0,0,1" BorderBrush="Black">
+            <Grid>
+                <ScrollViewer HorizontalAlignment="Stretch" Height="100">
+                    <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AcceptsReturn="True" TextWrapping="Wrap" Name="DescriptionTxtbx" />
+                </ScrollViewer>
+            </Grid>
+        </Border>
+        <Border Grid.Row="8" >
+            <Grid>
+                <Button Name="SaveChangesBtn" Height="Auto" Width="100" HorizontalAlignment="Right" Margin="0,5,0,0" Click="SaveChangesBtn_Click">
+                    Save Changes
+                </Button>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

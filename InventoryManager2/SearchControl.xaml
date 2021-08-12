@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="InventoryManager2.SearchControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="132" d:DesignWidth="249" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="150" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="1" VerticalAlignment="Center">
+            Name:
+        </Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="Name" VerticalAlignment="Center" Width="150" Margin="0,0,5,5" />
+        <Label Grid.Row="2" VerticalAlignment="Center">
+            Make:
+        </Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="Make" VerticalAlignment="Center" Width="150" Margin="0,0,5,5" />
+        <Label Grid.Row="3" VerticalAlignment="Center">
+            Model:
+        </Label>
+        <TextBox Grid.Row="3" Grid.Column="1" Name="Model" VerticalAlignment="Center" Width="150" Margin="0,0,5,5" />
+        <Label Grid.Row="4" VerticalAlignment="Center">
+            Year:
+        </Label>
+        <TextBox Grid.Row="4" Grid.Column="1" Name="Year" VerticalAlignment="Center" Width="150" Margin="0,0,5,5" />
+        <Button Grid.Row="5" Grid.ColumnSpan="2" Name="ResetBtn" HorizontalAlignment="Left" Width="75" Margin="5,0,0,5" Click="ResetBtn_Click">Reset Search</Button>
+        <Button Grid.Row="5" Grid.Column="1" Name="SearchBtn" HorizontalAlignment="Right" Width="75" Margin="0,0,5,5" Click="SearchBtn_Click">Search</Button>
+    </Grid>
+</UserControl>

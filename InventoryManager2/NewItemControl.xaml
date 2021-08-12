@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="InventoryManager2.NewItemControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="387" d:DesignWidth="276">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.ColumnSpan="2" HorizontalAlignment="Center" >
+            New Inventory Item:
+        </Label>
+        <Label Grid.Row="1" HorizontalAlignment="Center">
+            Name:
+        </Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="0,0,5,5" Name="NameInput" />
+        <Label Grid.Row="2" HorizontalAlignment="Center">
+            Make:
+        </Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="0,0,5,5" Name="MakeInput" />
+        <Label Grid.Row="3" HorizontalAlignment="Center">
+            Model:
+        </Label>
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="0,0,5,5" Name="ModelInput" />
+        <Label Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+            Year Range:
+        </Label>
+        <ComboBox Grid.Row="5" Grid.ColumnSpan="2" Name="StartYearInput" Width="75" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,5" IsEditable="False" IsReadOnly="False" Initialized="StartYearInput_Initialized">
+        </ComboBox>
+        <Label Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,5">
+            -
+        </Label>
+        <ComboBox Grid.Row="5" Grid.ColumnSpan="2" Name="EndYearInput" Width="75" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,0,5" IsEditable="False" IsReadOnly="False" Initialized="EndYearInput_Initialized">
+        </ComboBox>
+        <Label Grid.Row="6" HorizontalAlignment="Center">
+            Stock:
+        </Label>
+        <ComboBox Grid.Row="6" Grid.Column="1" Width="75" Name="StockInput" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,0,5" Initialized="Stock_Initialized">
+        </ComboBox>
+        <Label Grid.Row="7">
+            Bin Number:
+        </Label>
+        <TextBox Grid.Row="7" Grid.Column="1" Margin="0,0,5,5" Name="BinNumberInput"/>
+        <Label Grid.Row="8">
+            Description:
+        </Label>
+        <TextBox Grid.Row="9" Grid.ColumnSpan="2" Margin="5,0,5,5" AcceptsReturn="True" TextWrapping="Wrap" Height="100" Name="DescriptionInput" />
+        <Button Grid.Row="10" Grid.ColumnSpan="2" Name="AddNewItem" Height="25" Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="AddNewItem_Click">
+            Add New Item
+        </Button>
+    </Grid>
+</UserControl>
