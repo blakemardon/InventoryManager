@@ -15,20 +15,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/blakemardon/InventoryManager">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/Logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Inventory Manager</h3>
@@ -64,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Inventory Manager Screen Shot][product-screenshot]](Images/Main.png)
+<img src="images/Main.png" alt="Logo" width="80" height="80">
 
 This project is intended to be able to maintain a list of all parts availible in inventory for a automotive parts store. This project was an initial version to show competency in creating a system that is easy to use. Future versions would include moving from a XML file for storing data to a database as well as add features based on what is needed for the software to increase usability.
 
@@ -85,9 +77,9 @@ The project was originally written in Visual Studio 2013. All subsequent version
 
 Items can be added to the program using the new itme tab on the far left. Items can also be searched for using the search tab. Modifying an item can be done by clicking on the row in the software. The item will highlight and then can now be edited using the edit or delete buttons at the bottom.
 
-[![Inventory Manager Screen Shot][product-screenshot]](Images/Main.png)
-[![Inventory Manager Screen Shot][product-screenshot]](Images/Search.png)
-[![Inventory Manager Screen Shot][product-screenshot]](Images/ItemDetails.png)
+<img src="images/Main.png" alt="Logo" width="80" height="80">
+<img src="images/Search.png" alt="Logo" width="80" height="80">
+<img src="images/ItemDetails.png" alt="Logo" width="80" height="80">
 
 
 <!-- LICENSE -->
